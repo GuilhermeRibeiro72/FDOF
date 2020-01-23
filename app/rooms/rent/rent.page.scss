@@ -1,0 +1,31 @@
+ion-item{
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    padding: 0;
+}
+ion-title{
+    background-color: #989aa2;
+    color: white;
+    z-index: -2;
+}
+.icon{
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+}
+ion-button{
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 80%;
+    margin-top: 20%;
+    font-size: 18px;
+    font-weight: bold;
+}
+.shadow-red{
+    --border-radius: 5px;
+    --box-shadow: 0px 14px 25px rgba(93, 93, 93, 0.59);
+    text-decoration: none;
+    color: white;
+}

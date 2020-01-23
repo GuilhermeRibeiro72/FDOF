@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <img class="person" src="../assets/img/person.png">
+  <h2 align="center" style="font-weight: bold;margin-top: 60%;">Guilherme Ribeiro</h2>
+
+  <ion-item class="options">
+    <h4><a [routerLink]="'/account'" class="link">Minha Conta </a></h4>
+  </ion-item> 
+  <ion-item>
+    <h4><a [routerLink]="'/payments'" class="link"> Forma de Pagamento </a></h4>
+  </ion-item>
+  <ion-item>
+    <h4 (click)="logout()"> Sair </h4>
+  </ion-item>
+
+</ion-content>

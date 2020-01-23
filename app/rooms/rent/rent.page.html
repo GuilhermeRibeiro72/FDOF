@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <a [routerLink]="'/tabs/tabs/rooms'" routerDirection="back">
+      <ion-icon name="arrow-round-back" class="icon"></ion-icon>
+      </a>
+    <ion-title>
+      Fazer Pedido
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item></ion-item>
+
+  <ion-item-group>
+    <ion-item-divider>
+      <ion-label>Data Inicial</ion-label>
+    </ion-item-divider>
+
+    <ion-item>
+      <ion-label>Data</ion-label>
+      <ion-datetime displayFormat="D MMM" value="06-17"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Horário</ion-label>
+      <ion-datetime displayFormat="HH:mm" value="00-00" required></ion-datetime>
+    </ion-item>
+
+  </ion-item-group>
+  <ion-item></ion-item>
+  <ion-item-group>
+    <ion-item-divider>
+      <ion-label>Data Final</ion-label>
+    </ion-item-divider>
+  
+    <ion-item>
+      <ion-label>Data</ion-label>
+      <ion-datetime displayFormat="D MMM" value="06-17"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Horário</ion-label>
+      <ion-datetime displayFormat="HH:mm" value="00-00"></ion-datetime>
+    </ion-item>
+
+  </ion-item-group>
+      <a [routerLink]="'/tabs/tabs/rooms'">
+      <ion-button expand="block" (click)="showAlert()" class="shadow-red"  color="tertiary">Solicitar!</ion-button>
+      </a>
+ 
+
+
+</ion-content>

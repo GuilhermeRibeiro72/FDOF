@@ -1,0 +1,113 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Salas
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="container top">
+    <ion-segment (ionChange)="segmentChanged()" [(ngModel)]="segment">
+      <ion-segment-button value="0" style="height: 30px;font-size: 15px;">
+        <ion-label>1° Andar</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="1" style="font-size: 15px;">
+        <ion-label>2° Andar</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <ion-slides #slides (ionSlideDidChange)="slideChanged" scrollbar="true">
+    <ion-slide value="andar1">
+      <div class="slide-inner">
+        <ion-card>
+          <img src="../../assets/img/sala.jpg" />
+          <ion-card-header>
+            <ion-card-title>Sala 1</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <h1 style="color: black;font-weight: bold;">Propriedades:</h1>
+            Projetor;
+            Quadro;
+            20 Mesas;
+            20 Cadeiras;
+            Próxima á saída;
+            Apropriada para Aulas e Palestras;
+            <br>
+            <br>
+            <a [routerLink]="'/rent'">
+              <ion-button expand="block" class="shadow-red" color="tertiary">Este?</ion-button>
+            </a>
+          </ion-card-content>
+        </ion-card>
+        <br>
+        <ion-card>
+          <img style="width: 100%;height: 100%;" src="../../assets/img/sala2.jpg" />
+          <ion-card-header>
+            <ion-card-title>Sala 2</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <h1 style="color: black;font-weight: bold;">Propriedades:</h1>
+            TV;
+            10 Mesas;
+            10 Cadeiras;
+            Próxima ao Banheiro;
+            Apropriada principalmente para Reuniões;
+            <br>
+            <br>
+            <a [routerLink]="'/rent'">
+              <ion-button expand="block" class="shadow-red" color="tertiary">Este?</ion-button>
+            </a>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </ion-slide>
+
+    <ion-slide value="andar2">
+      <div class="slide-inner">
+        <ion-card>
+          <img style="width: 100%;height: 100%;" src="../../assets/img/sala2.jpg" />
+          <ion-card-header>
+            <ion-card-title>Sala 1</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <h1 style="color: black;font-weight: bold;">Propriedades:</h1>
+            TV 48";
+            10 Mesas;
+            10 Cadeiras;
+            Próxima ao Banheiro;
+            Apropriada principalmente para Reuniões;
+            <br>
+            <br>
+            <a [routerLink]="'/rent'">
+              <ion-button expand="block" class="shadow-red" color="tertiary">Este Aqui?</ion-button>
+            </a>
+          </ion-card-content>
+        </ion-card>
+        <br>
+        <ion-card>
+          <img src="../../assets/img/sala.jpg" />
+          <ion-card-header>
+            <ion-card-title>Sala 2</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <h1 style="color: black;font-weight: bold;">Propriedades:</h1>
+            Projetor;
+            Quadro;
+            20 Mesas;
+            20 Cadeiras;
+            Próxima á saída;
+            Apropriada para Aulas e Palestras;
+            <br>
+            <br>
+            <a [routerLink]="'/rent'">
+              <ion-button expand="block" class="shadow-red" color="tertiary">Este Por Favor!</ion-button>
+            </a>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
